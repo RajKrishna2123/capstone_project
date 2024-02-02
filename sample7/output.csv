@@ -1,0 +1,9 @@
+,,African-American,African-American,White,White
+Analytic dataset,Main exposure,Controls %,Cases (%),Controls %,Cases (%
+CBCS,entire,Behror,335 (100.0,332(100.0,526 (100.0,458(100.0
+CBCS,bom 1948 or later,,131 (39.1,135 (40.7),235 (44.7,181 (39.5
+Maternal age dataset,Birth order, Maternal agePaternal age,107 (31.9),116 34.9,173 (32.9),121 26.4
+Paternal age dataset,Paternal age,95(28.4,100 (30.1,171 (32.5),118 25.8
+CBCS,NC bon 1949 orlater,,99 (29.6,96 (28.9,112 (21.3,85 (18.6
+Birthweight,full dataset,Birthweight,86 (25.7,89 (26.8,110 (20.9,78(17.0
+Birthweightrestricted dataset,,49(14.6,3711.1,98(18.6),63 (13.8

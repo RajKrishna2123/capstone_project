@@ -1,0 +1,24 @@
+# requirements.txt
+#python version 3.7
+# Core libraries
+numpy==1.19.5
+opencv-python==4.5.3.56
+pandas==1.3.3
+
+# Deep learning framework (TensorFlow GPU version)
+tensorflow-gpu==2.4.0
+#keras_segmentaion installation form git is recomended 
+#HDF5 download and install  
+# CUDA and cuDNN versions for TensorFlow GPU compatibility
+# Make sure your system has CUDA 11.0 and cuDNN 8.0 installed
+# These are typically installed separately and are not Python packages
+# Be sure to configure your GPU environment accordingly
+
+# OCR (Optical Character Recognition)
+paddlepaddle==2.2.0
+paddleocr==2.3.0
+
+# Additional libraries (add as needed)
+matplotlib==3.4.3
+scikit-image==0.18.3
+scipy==1.7.3
