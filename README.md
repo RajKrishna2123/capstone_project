@@ -4,7 +4,7 @@ Welcome to the FireLLama project repository!
 
 ## Description
 
-This project was developed during my internship at FireLLama. It aims to do OCR over unstructured tables using semantic segmentation and save tables in the same structure as depicted in image.
+This project is under development as my last semester project for the subject UCF 439 Capstone project  
 
 ## Table of Contents
 - [Requirements](#Requirements)
