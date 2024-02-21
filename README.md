@@ -3,7 +3,7 @@
 Welcome to the FireLLama project repository!
 
 ## Description
-
+this project was earlier developed under fire llama company as part of my internship. I am further developing it.
 This project is under development as my last semester project for the subject UCF 439 Capstone project  
 
 ## Table of Contents
