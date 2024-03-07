@@ -1,6 +1,8 @@
 # MobileSegnet_PDFDetection# FireLLama
 
 Welcome to the FireLLama project repository!
+## Project Architecture 
+![Uploading temp - Made with Clipchamp (1) (1).gif…]()
 
 ## Description
 this project was earlier developed under fire llama company as part of my internship. I am further developing it.
