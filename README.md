@@ -2,7 +2,7 @@
 
 Welcome to the FireLLama project repository!
 ## Project Architecture 
-![Uploading temp - Made with Clipchamp (1) (1).gif…]()
+![2]([https://github.com/RajKrishna2123/IIT_Dhanbad/assets/58541488/3523f446-8cb0-4794-a1cf-95e8aa3b729c](https://github.com/RajKrishna2123/capstone_project/blob/main/temp%20-%20Made%20with%20Clipchamp%20(1)%20(1).gif))
 
 ## Description
 this project was earlier developed under fire llama company as part of my internship. I am further developing it.
