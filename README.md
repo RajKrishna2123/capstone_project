@@ -1,6 +1,6 @@
-# MobileSegnet_PDFDetection# FireLLama
+# Capstone project : Structural OCR
 
-Welcome to the FireLLama project repository!
+Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolutional Neural Networks for Structural OCR
 ## Project Architecture 
 ![2](https://github.com/RajKrishna2123/capstone_project/blob/main/project_architecture.gif)
 
