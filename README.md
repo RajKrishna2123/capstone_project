@@ -72,22 +72,22 @@ This project can be used to convert your bulk/single images into editable format
 
 ## Features
 
-1. **Extensive Training Data: The implemented AI model is trained over an extensive dataset of 1 million high￾resolution images. This ensures the system's robustness and accuracy in document structure identification.
+1. Extensive Training Data: The implemented AI model is trained over an extensive dataset of 1 million high￾resolution images. This ensures the system's robustness and accuracy in document structure identification.
 
-2. **MLOps Integration: Our implementation adheres to MLOps practices, ensuring a seamless and automated
+2. MLOps Integration: Our implementation adheres to MLOps practices, ensuring a seamless and automated
 end-to-end workflow. Continuous integration and delivery pipelines will be established for efficient model 
 deployment and updates.
 
-3. **Containerization: The system will be containerized for deployment as a web app and API service. This 
+3. Containerization: The system will be containerized for deployment as a web app and API service. This 
 promotes scalability and ease of integration into various applications.
 
-4. **Google Drive Integration: A unique feature allows users to effortlessly process bulk data by providing Google 
+4. Google Drive Integration: A unique feature allows users to effortlessly process bulk data by providing Google 
 Drive links.
 
-5. **Flexible Data Outputs: Another unique feature that system supports versatile data outputs, including CSV, 
+5. Flexible Data Outputs: Another unique feature that system supports versatile data outputs, including CSV, 
 MySQL databases, and XLSX, catering to diverse data management preferences.
 
-6. **Integrated API Service: Integrated API capabilities will provide other developers with easy access to 
+6. Integrated API Service: Integrated API capabilities will provide other developers with easy access to 
 incorporate Structural OCR functionalities into their applications, enhancing overall system accessibility.
 
 
