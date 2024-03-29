@@ -95,7 +95,7 @@ incorporate Structural OCR functionalities into their applications, enhancing ov
 
 ## Documentation
 
-[Link to external documentation or detailed guides, if available.]
+Link to external [documentation](https://dituni-my.sharepoint.com/:b:/g/personal/1000015049_dit_edu_in/ERVLe4t2EhFIrN-kOHXUsG8BfaxbtIt39VGSbBiw2B0sPA?e=B5GTLe) or detailed guides.
 
 ## Credits
 
