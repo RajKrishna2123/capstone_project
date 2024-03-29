@@ -21,7 +21,7 @@ This project is under development as my last semester project for the subject UC
 To run this project, you'll need the following specific dependencies:
 
 - Python 3.7
-- TensorFlow GPU 2.4.0 with CUDA 11.0 and cuDNN 8.0
+- TensorFlow GPU 2.4.1 with CUDA 11.0 and cuDNN 8.0
 - keras 2.4.3
 - imgaug
 - opencv 4.5.9
