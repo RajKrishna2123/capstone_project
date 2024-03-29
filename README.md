@@ -97,12 +97,12 @@ incorporate Structural OCR functionalities into their applications, enhancing ov
 
 ## Credits
 
-Special thanks to [rajeevratan84](https://github.com/rajeevratan84/image-segmentation-keras) for their awesome repository! that supported this project a lot.
+Special thanks to [Rajeev Ratan](https://github.com/rajeevratan84/image-segmentation-keras) for their awesome repository! that supported this project a lot.
 
 ## Acknowledgements
 
-- [Contributor One](https://github.com/contributor-one)
-- [Contributor Two](https://github.com/contributor-two)
+- [Vaibhav joshi](https://github.com/Helio-Centrism)
+- [Shubhankar dey](https://github.com/contributor-two)
 
 ## License
 
