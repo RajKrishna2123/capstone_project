@@ -68,29 +68,27 @@ There are two ways to get started with the project, follow these steps:
    ```
 ## Usage
 
-[Explain how users can use your project or application.]
+This project can be used to convert your bulk/single images into editable formatted structured as it was in image into a relational table at once
 
 ## Features
 
-1. **Segmentation Model:** Includes a pre-trained segmentation model based on the MobileNet architecture for semantic segmentation tasks.
+1. **Extensive Training Data: The implemented AI model is trained over an extensive dataset of 1 million high￾resolution images. This ensures the system's robustness and accuracy in document structure identification.
 
-2. **Training and Validation:** Provides scripts and instructions for training and validating the segmentation model using custom datasets.
+2. **MLOps Integration: Our implementation adheres to MLOps practices, ensuring a seamless and automated
+end-to-end workflow. Continuous integration and delivery pipelines will be established for efficient model 
+deployment and updates.
 
-3. **Data Processing:** Includes functions for data preprocessing, augmentation, and conversion between annotation formats (XML to PNG).
+3. **Containerization: The system will be containerized for deployment as a web app and API service. This 
+promotes scalability and ease of integration into various applications.
 
-4. **Image Cropping:** Allows for cropping tables from images using connected component labeling and OCR-based methods.
+4. **Google Drive Integration: A unique feature allows users to effortlessly process bulk data by providing Google 
+Drive links.
 
-5. **Text Recognition:** Utilizes OCR (Optical Character Recognition) to recognize and extract text from segmented table regions.
+5. **Flexible Data Outputs: Another unique feature that system supports versatile data outputs, including CSV, 
+MySQL databases, and XLSX, catering to diverse data management preferences.
 
-6. **CSV Output:** Exports the extracted table data to CSV files for further analysis and processing.
-
-7. **Documentation:** Offers detailed documentation on how to use the codebase and its functionalities.
-
-8. **Checkpoints:** Supports saving and loading model checkpoints for training and inference.
-
-9. **Data Verification:** Provides a data verification step to ensure dataset integrity before training.
-
-10. **Batch Processing:** Supports batch processing of multiple images and tables for efficiency.
+6. **Integrated API Service: Integrated API capabilities will provide other developers with easy access to 
+incorporate Structural OCR functionalities into their applications, enhancing overall system accessibility.
 
 
 ## Documentation
