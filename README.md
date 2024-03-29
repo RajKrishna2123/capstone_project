@@ -14,6 +14,8 @@ This project is under development as my last semester project for the subject UC
 - [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)
+- [Credits](#Credits)
+- [Acknowledgements](#Acknowledgements)
 - [License](#license)
 
 ## Requirements
