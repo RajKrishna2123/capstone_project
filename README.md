@@ -1,4 +1,4 @@
-# Capstone project : Structural OCR
+ni# Capstone project : Structural OCR
 
 Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolutional Neural Networks for Structural OCR
 ## Project Architecture 
@@ -95,6 +95,14 @@ incorporate Structural OCR functionalities into their applications, enhancing ov
 
 [Link to external documentation or detailed guides, if available.]
 
+## Credits
+
+Special thanks to [rajeevratan84](https://github.com/rajeevratan84/image-segmentation-keras) for their awesome repository! that supported this project a lot.
+
+## Acknowledgements
+
+- [Contributor One](https://github.com/contributor-one)
+- [Contributor Two](https://github.com/contributor-two)
 
 ## License
 
