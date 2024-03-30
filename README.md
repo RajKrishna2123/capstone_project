@@ -64,7 +64,7 @@ There are two ways to get started with the project, follow these steps:
    ```bash
    docker run --gpus all -it -v D:/struct_ocr_data:/app -p 8000:8000 project_cotainer:updated1 /bin/bash
    ```
-   once container is up and running is case of lost connection then to reconnect to same container use following command 
+   once container is up and running, in case of lost connection or accidentally closed terminal then to reconnect to same container use following command 
    ```bash
    docker exec -it <container_id> bash
    ```
