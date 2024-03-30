@@ -1,14 +1,13 @@
 Capstone project : Structural OCR
 
 Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolutional Neural Networks for Structural OCR
-## Project Architecture 
-![2](https://github.com/RajKrishna2123/capstone_project/blob/main/project_architecture.gif)
 
 ## Description
 this project was earlier developed under fire llama company as part of my internship. I am further developing it.
-This project is under development as my last semester project for the subject UCF 439 Capstone project  
+This project is under development as my last semester project for the subject UCF 439 Capstone project 
 
 ## Table of Contents
+- [Porject Architecture](#Project Architecture)
 - [Requirements](#Requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,6 +16,9 @@ This project is under development as my last semester project for the subject UC
 - [Credits](#Credits)
 - [Acknowledgements](#Acknowledgements)
 - [License](#license)
+
+## Project Architecture 
+![2](https://github.com/RajKrishna2123/capstone_project/blob/main/project_architecture.gif) 
 
 ## Requirements
 
@@ -74,7 +76,7 @@ This project can be used to convert your bulk/single images into editable format
 
 ## Features
 
-1. Extensive Training Data: The implemented AI model is trained over an extensive dataset of 1 million high￾resolution images. This ensures the system's robustness and accuracy in document structure identification.
+1. Extensive Training Data: The implemented AI model is trained over an extensive dataset of 1 million high resolution images. This ensures the system's robustness and accuracy in document structure identification.
 
 2. MLOps Integration: Our implementation adheres to MLOps practices, ensuring a seamless and automated
 end-to-end workflow. Continuous integration and delivery pipelines will be established for efficient model 
