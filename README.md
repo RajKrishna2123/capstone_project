@@ -4,7 +4,7 @@ Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolu
 
 ## Dataset link 
 1 million table segmentation data 
-Nearly 1 million tables from scientific articles with bounding box annotations
+Nearly 1 million tables from scientific articles with bounding box annotations<br>
 link :: https://www.kaggle.com/datasets/bsmock/pubtables-1m-structure
 
 ## Description
