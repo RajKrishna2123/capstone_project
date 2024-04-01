@@ -12,7 +12,7 @@ this project was earlier developed under fire llama company as part of my intern
 This project is under development as my last semester project for the subject UCF 439 Capstone project 
 
 ## Table of Contents
-- [Porject Architecture](#Project Architecture)
+- [Porject Architecture](#Project)
 - [Requirements](#Requirements)
 - [Installation](#installation)
 - [Usage](#usage)
