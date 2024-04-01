@@ -111,7 +111,7 @@ Special thanks to [Rajeev Ratan](https://github.com/rajeevratan84/image-segmenta
 ## Acknowledgements
 
 - [Vaibhav joshi](https://github.com/Helio-Centrism)
-- [Shubhankar dey](https://github.com/contributor-two)
+- [Shubhankar dey](https://github.com/poineapple)
 
 ## License
 
