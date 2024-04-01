@@ -1,4 +1,4 @@
-##Capstone project : Structural OCR
+## Capstone project : Structural OCR
 
 Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolutional Neural Networks for Structural OCR
 
