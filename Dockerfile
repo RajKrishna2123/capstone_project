@@ -21,8 +21,8 @@ RUN apt-get update && \
     pciutils \
     lsb-release \
     gnupg \
-    gcc-9 \
-    g++-9 \
+    libgl1-mesa-glx \
+    libgtk-3-dev && \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -37,20 +37,16 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
 
 # Intsall necessary python packages 
 RUN pip3.7 install \
-    numpy==1.19.5 \
-    opencv-python==4.5.3.56 \
-    pandas==1.3.3 \
-    matplotlib==3.4.3 \
-    scikit-image==0.17.2 \
-    scipy==1.7.3 \
-    typing-extensions==3.7.4.3 \
-    asgiref==3.4.1 \
-    Django==3.2
+    opencv-python==4.5.1.48 \
+    tqdm==4.66.2 \
+    pillow==9.5.0 \
+    h5py==2.10.0 
+
 
 # Reset to default interactive mode
 ENV DEBIAN_FRONTEND=dialog
 
-# Download CUDA, cudnn and tensorflow 
+# Download CUDA, cudnn and tensorflow for gpu acess 
 RUN wget http://developer.download.nvidia.com/compute/cuda/11.0.2/local_installers/cuda_11.0.2_450.51.05_linux.run && \
     wget https://developer.download.nvidia.com/compute/redist/cudnn/v8.0.5/cudnn-11.0-linux-x64-v8.0.5.39.tgz 
 
@@ -94,11 +90,12 @@ RUN sh cuda_11.0.2_450.51.05_linux.run --silent --toolkit --override && \
     cp cuda/lib64/libcudnn_static.a /usr/local/cuda/lib64 && \
     cp cuda/lib64/libcudnn_static.a /usr/local/cuda/lib64 && \
     chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn* && \
-    pip3.7 install tensorflow-gpu==2.4 && \
+    pip3.7 install tensorflow-gpu==2.4.1 && \
+    pip3.7 install keras==2.4.3 && \
+    pip3.7 install protobuf==3.9.2 &&\
     rm -rf cuda_11.0.2_450.51.05_linux.run && \
     rm -rf cudnn-11.0-linux-x64-v8.0.5.39.tgz && \
-    rm -rf cuda \
-    pip3.7 install keras==2.4.3
+    rm -rf cuda 
 
 RUN apt-get update && \
     apt upgrade -y 
