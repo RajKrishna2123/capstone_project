@@ -1,6 +1,11 @@
-Capstone project : Structural OCR
+##Capstone project : Structural OCR
 
 Innovations in Document Analysis: Exploring Keras Segmentation and Graph Convolutional Neural Networks for Structural OCR
+
+## Dataset link 
+1 million table segmentation data 
+Nearly 1 million tables from scientific articles with bounding box annotations
+link :: https://www.kaggle.com/datasets/bsmock/pubtables-1m-structure
 
 ## Description
 this project was earlier developed under fire llama company as part of my internship. I am further developing it.
