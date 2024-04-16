@@ -22,7 +22,7 @@ RUN apt-get update && \
     lsb-release \
     gnupg \
     libgl1-mesa-glx \
-    libgtk-3-dev && \
+    libgtk-3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

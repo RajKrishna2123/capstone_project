@@ -82,6 +82,11 @@
     
 }
 
+.author-img {
+    height: 450px;
+    width:  450px;
+}
+
 @keyframes fade-in {
     to {scale:1; opacity: 1; translate: 0 0 0;}
 }
