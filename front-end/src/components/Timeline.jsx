@@ -19,7 +19,7 @@ const timelineData = [
 function Timeline() {
   return (
     <div>
-    <div className=' text-5xl font-bold text-center m-8'>Team Overview and Contributors</div>
+    <div className=' text-5xl font-bold text-center m-8'>Our Timeline</div>
     <div className=''>
           <VerticalTimeline>
               {

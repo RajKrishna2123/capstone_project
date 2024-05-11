@@ -82,11 +82,6 @@
     
 }
 
-.author-img {
-    height: 450px;
-    width:  450px;
-}
-
 @keyframes fade-in {
     to {scale:1; opacity: 1; translate: 0 0 0;}
 }
@@ -157,7 +152,7 @@ body{
     z-index: -200;
     border-radius: inherit;
     background: conic-gradient( from var(--gradient-angle), 
-        var(--clr6), var(--clr7), var(--clr8), var(--clr7), var(--clr6));
+        var(--clr3), var(--clr7), var(--clr8), var(--clr7), var(--clr3));
     animation: rotation 4s linear infinite;
 }
 .spin-border::after, .spin-border::before{
@@ -186,15 +181,154 @@ body{
     filter: drop-shadow(0 0 10px var(--clr6));
     filter: drop-shadow(0 0 20px var(--clr7));
 }
+.hover-glow:hover{
+    filter: drop-shadow(0 0 100px var(--clr6));
+    filter: drop-shadow(0 0 200px var(--clr7));
 
-fooer-shadow{
+}
+
+/* fooer-shadow{
     --tw-shadow: 0 -1px -2px 0 rgb(0 0 0 / 0.05);
     --tw-shadow-colored: 0 -1px -2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), 
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+} */
 
 footer{
     box-shadow:  20px 45px -3px #ffff,
     0 4px 6px -4px #ffff;
+}
+
+.docs-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+}
+
+main {
+    color: white;
+  max-width: 900px;
+  padding: 16px;
+  border-radius: 8px;
+  margin-left: 8px;
+box-shadow: 0px 0px 20px var(--clr8);
+}
+
+nav {
+  width: 400px;
+  min-width: 220px;
+  padding: 16px;
+  margin: 8px;
+  align-self: flex-start;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 48px;
+  max-height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
+.TOC-bullet {
+  color: #A6ACC9;
+  text-decoration: none;
+}
+
+/* li.active > a {
+  color: white;
+} */
+
+.TOC-bullet:hover {
+  color: white;
+}
+
+.doc-h2, .doc-h3 {
+    padding-top: 70px;
+}
+
+.first-h2 {
+    padding-top: 4px;
+}
+
+.para {
+    padding-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.doc-h2, .first-h2 {
+    font-size: 1.875rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.doc-h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #07012a;
+    /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(139, 139, 165);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid black;
+    /* creates padding around scroll thumb */
+}
+
+.author-img {
+    height: 300px;
+    width: 300px;
+}
+
+.resizer {
+    background: #444857;
+    height: 100%;
+    width: 14px;
+
+    cursor: col-resize;
+    position: absolute;
+
+    flex-shrink: 0;
+    cursor: col-resize;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    
+}
+
+.resizer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 15px;
+    border-inline: 1px solid #fff;
+}
+
+.resizable {
+    position: relative;
+
+    border: 1px solid rgb(24, 0, 84);
+    border-radius: 0.25rem;
+    
 }
