@@ -1,6 +1,6 @@
 import docker from '/docker.svg'
 import opencv from '/opencv.svg'
-import django from '/django.svg'
+import flask from '/flask.svg'
 import mysql from '/sqlite.svg'
 import tensorflow from '/tensorflow.svg'
 import keras from '/keras.svg'
@@ -36,8 +36,8 @@ function TechStack() {
           />
           <img
             className="stack-img fade-in-content glow "
-            src={django}
-            title="django"
+            src={flask}
+            title="flask"
           />
           <img
             className="stack-img fade-in-content glow "

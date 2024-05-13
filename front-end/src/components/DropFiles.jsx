@@ -9,7 +9,7 @@ function sendFile(file, setImageUrls, setCSVUrls) {
   var form = new FormData();
   form.append("file", file);
   var settings = {
-    url: "http://192.168.1.9:8000/predict",
+    url: "http://192.168.250.24:8000/predict",
     method: "POST",
     timeout: 0,
     processData: false,
@@ -34,7 +34,7 @@ function sendFile(file, setImageUrls, setCSVUrls) {
           console.log(key, value);
         }
         var settings2 = {
-          url: "http://192.168.1.9:7000/predict_csv",
+          url: "http://192.168.250.24:7000/predict_csv",
           method: "POST",
           timeout: 0,
           processData: false,
@@ -43,7 +43,7 @@ function sendFile(file, setImageUrls, setCSVUrls) {
           data: form,
         };
         $.ajax(settings2).done(function (response2) {
-          console.log('hi');
+          console.log('csv');
           console.log(response2);
           var csvBlob = new Blob([response2], { type: "text/csv" });
 
@@ -102,7 +102,7 @@ const DropzoneComponent = ({ setAreFilesUploaded, setSelectedImages }) => {
         <section className="w-full">
           <div
             {...getRootProps()}
-            className="dropzone md:h-[80%] h-[95%] w-full border-4 border-gray-400
+            className="dropzone h-auto pb-8 w-full border-4 border-gray-400
                         border-dashed rounded-3xl"
           >
             <input {...getInputProps()} accept="image/jpeg" />
@@ -194,12 +194,12 @@ const ImagePreview = ({ selectedImages }) => {
     <div className="flex flex-col gap-16 items-center w-[80vw]">
       <h1 className="text-6xl pt-8 text-center ">Your Images</h1>
       <div
-        className="w-full h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
-       rounded-xl md:px-20 px-4 md:border-8 border-2 border-[#7042f861] py-6"
+        className="w-auto h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
+       rounded-xl md:px-20 px-4 border-t-4 border-b-4  border-[#7042f861] py-6"
       >
         {selectedImages.length > 0 &&
           selectedImages
-            .slice(0, 10)
+            .slice(0, 8)
             .map((image, index) => (
               <img
                 src={`${URL.createObjectURL(image)}`}
@@ -213,15 +213,15 @@ const ImagePreview = ({ selectedImages }) => {
         <button
           className="md:text-4xl text-2xl m-auto px-16 py-2 spin-border-button rounded-full cursor-pointer md:w-[30rem]"
           onClick={() => {
-            if (selectedImages.length > 10) {
+            if (selectedImages.length > 8) {
               alert(
-                "Only 10 images can be converted at a time. Upgrade to premium for more!"
+                "Only 8 images can be converted at a time. Upgrade to premium for more!"
               );
             }
             setInitiated(true);
             Promise.all(
               selectedImages
-                .slice(0, 10)
+                .slice(0, 8)
                 .map((image) => sendFile(image, setImageUrls, setCSVUrls))
             ).then(() => setDownloadReady(true));
           }}
@@ -229,9 +229,13 @@ const ImagePreview = ({ selectedImages }) => {
           Convert
         </button>
       ) : downloadReady ? (
-        <button 
-        onClick={() => {console.log('clicked'); ;CSVUrls.forEach((url) => downloadCSV(url));}}
-        className="md:text-4xl text-2xl m-auto px-16 py-2 spin-border-button rounded-full cursor-pointer md:w-[30rem]">
+        <button
+          onClick={() => {
+            console.log("clicked");
+            CSVUrls.forEach((url) => downloadCSV(url));
+          }}
+          className="md:text-4xl text-2xl m-auto px-16 py-2 spin-border-button rounded-full cursor-pointer md:w-[30rem]"
+        >
           Download!
         </button>
       ) : (
@@ -239,9 +243,9 @@ const ImagePreview = ({ selectedImages }) => {
           <Processing />
         </button>
       )}
-      <div
-        className="w-full h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
-       rounded-xl md:px-20 px-4 md:border-8 border-2 border-[#7042f861] py-6"
+      {initiated ? (<div
+        className="w-auto h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
+       rounded-xl md:px-20 px-4 border-t-4 border-b-4  border-[#7042f861] py-6"
       >
         {imageUrls.map((url, index) => (
           <img
@@ -251,7 +255,7 @@ const ImagePreview = ({ selectedImages }) => {
             className="md:w-40 md:h-30 w-20 h-20"
           />
         ))}
-      </div>
+      </div>): <div></div>}
     </div>
   );
 };

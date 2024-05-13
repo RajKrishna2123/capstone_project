@@ -3,11 +3,11 @@ import '../styling.css'
 export default function Footer() {
   return (
     <div
-      className="shadow-[0_-10px_15px_-3px_rgba(255,255,255)] absolute md:translate-y-[-140px] translate-y-40 w-full
+      className="shadow-[0_-10px_15px_-3px_rgba(255,255,255)] absolute md:translate-y-[-180px] pt-10 translate-y-40 w-full
        text-white md:h-[350px] h-[480px] shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm z-[-1]"
     >
       <div
-        className="w-full h-full flex flex-col justify-end pt-4 px-10 
+        className="w-full h-full flex flex-col justify-end px-10 
           shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm"
       >
         <div className="flex flex-col items-center justify-end z-[1]">

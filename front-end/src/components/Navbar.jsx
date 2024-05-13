@@ -11,7 +11,7 @@ import LoginPage from '../login/pages/Login'
 function Navbar() {
 
 	const [isVisible, setIsVisible] = useState(false);
-	const handleClick = (event) => {
+	const ToggleLoginWidget = (event) => {
     setIsVisible((current) => !current);
   };
 	return (
@@ -54,14 +54,14 @@ function Navbar() {
             <a href="/" title="Rewards">
               <img src={gift} className="header-button max-h-[24px] " />
             </a>
-            <button title="Login/signup" onClick={handleClick}>
+            <button title="Login/signup" onClick={ToggleLoginWidget}>
               <img src={loggedout} className="header-button max-h-[24px] " />
             </button>
           </div>
         </div>
       </div>
-      <div className={"" + (!isVisible ? " hidden" : "")}>
-        <LoginPage />
+      <div className={"h-[100vh] bg-black/20" + (!isVisible ? " hidden" : "")}>
+        <LoginPage setIsVisible={setIsVisible} />
       </div>
     </div>
     // <div>

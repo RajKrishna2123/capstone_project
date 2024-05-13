@@ -28,7 +28,6 @@ function LandingPage() {
           <div className=''>
             <ContactForm />
             <Footer />
-            <Navbar />
           </div>
         </div>
       </div>

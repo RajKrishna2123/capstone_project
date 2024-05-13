@@ -6,7 +6,6 @@ import Slider from 'react-slick';
 import  "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const reviewData = [{ name: "Charlie Brown", rev:"This OCR data extraction tool is a game-changer. It's incredibly accurate and saves me hours of manual data entry. Highly recommended!"},
   { name: "John Doe", rev:"I'm impressed with the precision of this OCR tool. It's able to extract data from even the most complex documents. The user interface is also very intuitive and easy to use."},
   { name: "Jane Smith", rev:"I've tried several OCR tools, and this one is by far the best. The accuracy is unparalleled, and it's incredibly fast too. It's made my work so much easier."},
@@ -18,6 +17,8 @@ const reviewData = [{ name: "Charlie Brown", rev:"This OCR data extraction tool 
   { name: "Scarlett Johansson", rev: "This OCR tool is excellent. It's not only accurate but also very efficient. It has saved me a lot of time and effort. I highly recommend it." },
   { name: "Tom Holland", rev: "The precision of this OCR tool is amazing. It can extract data from various types of documents with ease. It's an essential tool for anyone dealing with a lot of paperwork." }
 ];
+
+
 
 function Reviews() {
   const sliderSettings = {
