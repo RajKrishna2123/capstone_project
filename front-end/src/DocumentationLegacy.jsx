@@ -143,7 +143,7 @@ const TableOfContents = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav className="overflow-x-hidden width-full">
+    <nav className="overflow-x-hidden width-full m-x-16">
       <Headings headings={nestedHeadings} activeId={activeId} />
     </nav>
   );
@@ -162,7 +162,7 @@ function Documentation() {
       >
         Documentation
       </h1>
-      <div className="docs-container pt-10">
+      <div className="docs-container pt-10 backdrop-blur-lg">
         <main>
           <h2 className="first-h2" id="initial-header">
             About DATA

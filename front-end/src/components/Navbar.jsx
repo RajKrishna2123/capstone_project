@@ -16,17 +16,17 @@ function Navbar() {
   };
 	return (
     <div>
-      <div className=" w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm z-[52] px-10">
-        <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-          <a href="/" className="h-auto w-auto flex flex-row items-center">
+      <div className=" w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm z-[52] md:px-10 px-2">
+        <div className="w-full h-full flex flex-row items-center justify-between m-auto md:px-[10px] ">
+          <a href="/" className="h-auto w-auto flex flex-row items-center ">
             <img src={logo} className=" h-[40px]" />
 
-            <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+            <span className="font-bold ml-[10px] md:text-gray-300">
               QuickOCR
             </span>
           </a>
 
-          <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+          <div className="md:w-[500px] h-full flex flex-row items-center justify-between md:mr-20 ">
             <div
               className="hidden md:flex grow flex-col md:flex-row items-center justify-between w-full h-auto border
            border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full
@@ -43,14 +43,14 @@ function Navbar() {
                 </a>
               </div>
               <div className="h-full w-full text-center cursor-pointer hover:text-white">
-                <a href="/" >
+                <a href="/home" >
                   Services
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-row md:gap-5 gap-1">
             <a href="/" title="Rewards">
               <img src={gift} className="header-button max-h-[24px] " />
             </a>

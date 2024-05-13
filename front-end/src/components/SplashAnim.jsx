@@ -25,7 +25,7 @@ const SplashAnim = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className="flex flex-col gap-6 mt-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto"
+                    className="flex flex-col gap-6 mt-16 md:text-5xl text-3xl font-bold text-white max-w-[600px] w-auto h-auto"
                 >
                     <span>
                         Providing
@@ -39,14 +39,14 @@ const SplashAnim = () => {
 
                 <motion.p
                     variants={slideInFromLeft(0.8)}
-                    className="text-lg text-gray-400 my-5 max-w-[550px]"
+                    className="text-lg text-gray-400 my-5 md:w-[550px] w-[16rem]"
                 >
                     Innovations in Document Analysis: Exploring Keras Segmentation
                     <br/> and Graph Convolutional Neural Networks for Structural OCR
                 </motion.p>
                 <motion.div variants={slideInFromBottom(1.5)}>
                     <a href='/home'>
-                        <label className='text-3xl m-auto px-16
+                        <label className='text-3xl m-auto md:px-16 px-8
            py-2 spin-border-button rounded-full cursor-pointer'>Get Started</label>
                     </a>
                 </motion.div>

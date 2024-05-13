@@ -9,7 +9,7 @@ function Blackhole() {
         //   </div>
         <div>
             <div className='relative flex flex-col h-[100vh]'>
-                <video className='rotate-180 absolute top-[-320px]  h-full w-full left-0 z-[-2] object-cover' src={Vid}
+                <video className='rotate-180 absolute md:top-[-320px] top-[-400px] h-full w-full left-0 z-[-2] object-cover' src={Vid}
                     autoPlay loop muted />
                 <SplashAnim/>
                 {/* <div className='flex my-16 z-10 justify-center'>

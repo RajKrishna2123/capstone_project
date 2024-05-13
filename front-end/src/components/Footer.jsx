@@ -3,8 +3,8 @@ import '../styling.css'
 export default function Footer() {
   return (
     <div
-      className="shadow-[0_-10px_15px_-3px_rgba(255,255,255)] absolute translate-y-[-140px] w-full
-       text-white h-[350px] shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm z-[-1]"
+      className="shadow-[0_-10px_15px_-3px_rgba(255,255,255)] absolute md:translate-y-[-140px] translate-y-40 w-full
+       text-white md:h-[350px] h-[480px] shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-sm z-[-1]"
     >
       <div
         className="w-full h-full flex flex-col justify-end pt-4 px-10 
@@ -43,7 +43,7 @@ export default function Footer() {
               </p>
               <p className="flex flex-row items-center my-2 cursor-pointer">
                 <span className="text-[15px] ml-[6px] cursor-pointer z-50">
-                  <a href="/documentation">Learning about us</a>
+                  <a href="/about">Learning about us</a>
                 </span>
               </p>
               <p className="flex flex-row items-center my-2 cursor-pointer">

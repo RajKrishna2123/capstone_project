@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "../styling.css";
 
-function BeforeAfter() {
+function BeforeAfterHorizontal() {
   const resizableRef = useRef(null);
   const resizerRef = useRef(null);
 
@@ -51,25 +51,21 @@ function BeforeAfter() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center flex-col">
-      <h1 className="text-4xl text-center px-10 mb-4 md:mb-10 md:mt-14 text-white">
+    <div>
+      <h1 className="text-4xl text-center px-10 py-16 text-white">
         {" "}
-        See the{" "}
+        See the {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           {" "}
           Magic{" "}
         </span>
-        with your
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          {" "}
-          own Eyes{" "}
-        </span>
+        with your own eyes
       </h1>
-      <div className=" h-[450px] w-[350px] md:w-[1000px] spin-border flex items-center justify-center">
+      <div className=" h-[450px] w-[1000px] spin-border flex items-center justify-center">
         <div className="overflow-hidden spin-border">
-          <div className="h-[450px] w-[350px] md:w-[1000px] bg-[url('/sampleImage1.jpg')] md:bg-cover">
+          <div className="h-[450px] w-[1000px] bg-[url('/sampleImage.jpg')] bg-cover">
             <div
-              className="w-[50%] h-full bg-[url('/sampleMask1.png')] md:bg-cover resizable"
+              className="w-[50%] h-full bg-[url('/sampleMask1.png')] bg-cover resizable"
               ref={resizableRef}
             >
               <div
@@ -84,4 +80,4 @@ function BeforeAfter() {
   );
 }
 
-export default BeforeAfter;
+export default BeforeAfterHorizontal;

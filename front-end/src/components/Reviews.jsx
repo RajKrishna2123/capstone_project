@@ -21,7 +21,6 @@ const reviewData = [{ name: "Charlie Brown", rev:"This OCR data extraction tool 
 
 function Reviews() {
   const sliderSettings = {
-    
     dots: true,
     centerMode: true,
     swipeToSlide: true,
@@ -33,7 +32,15 @@ function Reviews() {
     autoplaySpeed: 5000,
     pauseOnHover: true,
     arrows: false,
-  } 
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        },
+      }
+    ],
+  }; 
   
   const slider = useRef(null);
   
@@ -41,7 +48,7 @@ function Reviews() {
     <div className="child flex justify-center items-center">
       <div className="w-full fade-in-content h-[80vh]">
         <div className=" relative rounded-[2rem] h-full -z-20">
-          <h1 className="text-4xl text-white text-center px-10 pt-8">
+          <h1 className="text-4xl text-white text-center px-10 md:pt-8">
             Our{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
@@ -51,7 +58,7 @@ function Reviews() {
           <Slider ref={slider} {...sliderSettings} className=" z-1">
             {reviewData.map((d) => (
               <div className=" h-[600px] rounded-lg ">
-                <div className="h-[480px] mt-20 mx-25 spin-border">
+                <div className="h-[480px] md:mt-20 mt-10 mx-25 spin-border">
                   <div className="flex flex-col justify-center items-center">
                     <p className="text-3xl my-10 font-bold">{d.name}</p>
                     <p className="text-xl px-8 py-16 w-[90%] border-t-2 border-white">

@@ -19,7 +19,7 @@ function LandingPage() {
         </div>
         <div className="child flex justify-center items-center">
           <BeforeAfter />
-          </div>
+        </div>
         <TechStack />
         <Security />
         <Reviews />

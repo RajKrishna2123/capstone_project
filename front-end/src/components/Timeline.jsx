@@ -4,17 +4,43 @@ import '../styling.css'
 import 'react-vertical-timeline-component/style.min.css'
 
 const timelineData = [
-    {
-        id: 1, title: "Initiation", desc: "Feasibility and market demand were assessed, leading to the conclusion and finalization of the development process.", date:"10th Feb"},
-    {
-    id: 2, title: "Planning", desc: "Detailed project plans created, including development of flowcharts and design strategies.", date:"22nd Feb"},
-    {
-    id: 3, title: "Execution", desc: "Project tasks are performed, and the project plan is put into action.", date:"30 Mar"},
-    {
-    id: 4, title: "Optimization", desc: "Analysis of AI models for best efficient models so that it becomes a deployableApplication", date:"20 Apr"},
-    {
-    id: 5, title: "Closure", desc: "Documenting deliverables, conducting reviews, transitioning outcomes.", date:"1st May"},
-]
+  {
+    id: 1,
+    title: "Requirement Analysis",
+    desc: "Gathering and analyzing the requirements and needs of the software.",
+    date: "10th Feb",
+  },
+  {
+    id: 2,
+    title: "Design",
+    desc: "Designing the software system, including system architecture and database design.",
+    date: "22nd Feb",
+  },
+  {
+    id: 3,
+    title: "Implementation",
+    desc: "Coding and building the software system.",
+    date: "30 Mar",
+  },
+  {
+    id: 4,
+    title: "Testing",
+    desc: "Testing the software system for defects and issues.",
+    date: "20 Apr",
+  },
+  {
+    id: 5,
+    title: "Deployment",
+    desc: "Deploying the software system into the production environment.",
+    date: "1st May",
+  },
+  {
+    id: 6,
+    title: "Maintenance",
+    desc: "Maintaining and updating the software system post-deployment.",
+    date: "10th May",
+  },
+];
 
 function Timeline() {
   return (

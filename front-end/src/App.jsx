@@ -25,7 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Conversion />} />
           <Route path="/documentation" element={<Documentation />} />
-          <Route path="/doc" element={<Documentation />} />
+          <Route path="/doc" element={<DocumentationLegacy />} />
           <Route path="/documentationeditor" element={<DocumentationEditor />} />
           <Route path="/login" element={<LoginRedirect />} />
           <Route path="/signup" element={<SigunupRedirect />} />

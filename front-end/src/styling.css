@@ -82,6 +82,14 @@
     
 }
 
+@media (max-width:800px) {
+    .stack-img {
+        height: 65px;
+        animation-range-start: 10vh;
+        animation-range-end: 35vh;
+    }
+}
+
 @keyframes fade-in {
     to {scale:1; opacity: 1; translate: 0 0 0;}
 }
