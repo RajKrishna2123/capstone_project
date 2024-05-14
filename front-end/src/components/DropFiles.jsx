@@ -2,6 +2,16 @@ import "../styling.css";
 import React, { useState, useEffect } from "react";
 import Dropzone from "react-dropzone";
 import $ from "jquery";
+import LightGallery from "lightgallery/react";
+
+// import styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+// import plugins if you need
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 
 
@@ -9,7 +19,7 @@ function sendFile(file, setImageUrls, setCSVUrls) {
   var form = new FormData();
   form.append("file", file);
   var settings = {
-    url: "http://192.168.250.24:8000/predict",
+    url: "http://122.161.74.166:8000/predict",
     method: "POST",
     timeout: 0,
     processData: false,
@@ -34,7 +44,7 @@ function sendFile(file, setImageUrls, setCSVUrls) {
           console.log(key, value);
         }
         var settings2 = {
-          url: "http://192.168.250.24:7000/predict_csv",
+          url: "http://122.161.74.166:7000/predict_csv",
           method: "POST",
           timeout: 0,
           processData: false,
@@ -102,14 +112,14 @@ const DropzoneComponent = ({ setAreFilesUploaded, setSelectedImages }) => {
         <section className="w-full">
           <div
             {...getRootProps()}
-            className="dropzone h-auto pb-8 w-full border-4 border-gray-400
-                        border-dashed rounded-3xl"
+            className="dropzone h-auto pb-8 w-auto border-4 border-gray-400
+                        border-dashed rounded-3xl mx-8"
           >
-            <input {...getInputProps()} accept="image/jpeg" />
+            <input {...getInputProps()} accept="image/*" />
             {isDragActive ? (
-              <p className="py-16 text-center text-xl">Drop files here...</p>
+              <p className="py-16 text-center text-xl text-gray-400">Drop files here...</p>
             ) : (
-              <p className="md:py-16 text-center text-xl">
+              <p className="md:py-16 text-center text-xl text-gray-400">
                 {isMobile
                   ? ""
                   : "Drag 'n' drop some files here, or click in the box to upload files"}
@@ -191,23 +201,25 @@ const ImagePreview = ({ selectedImages }) => {
   const [initiated, setInitiated] = useState(false);
   const [downloadReady, setDownloadReady] = useState(false);
   return (
-    <div className="flex flex-col gap-16 items-center w-[80vw]">
+    <div className="flex flex-col gap-16 items-center w-[90vw]">
       <h1 className="text-6xl pt-8 text-center ">Your Images</h1>
       <div
-        className="w-auto h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
-       rounded-xl md:px-20 px-4 border-t-4 border-b-4  border-[#7042f861] py-6"
+        className="md:w-auto h-auto bg-[#0D0E1D]/50 md:rounded-full
+       rounded-xl md:px-20 px-4 border-y-4  border-[#7042f861] py-6"
       >
-        {selectedImages.length > 0 &&
-          selectedImages
-            .slice(0, 8)
-            .map((image, index) => (
-              <img
-                src={`${URL.createObjectURL(image)}`}
-                key={index}
-                alt=""
-                className="md:w-40 md:h-30 w-20 h-20"
-              />
-            ))}
+        <LightGallery plugins={[lgZoom]}>
+          {selectedImages.length > 0 &&
+            selectedImages
+              .slice(0, 8)
+              .map((image, index) => (
+                <img
+                  src={`${URL.createObjectURL(image)}`}
+                  key={index}
+                  alt=""
+                  className="md:w-40 md:h-30 w-20 h-20 cursor-pointer"
+                />
+              ))}
+        </LightGallery>
       </div>
       {!initiated ? (
         <button
@@ -243,19 +255,25 @@ const ImagePreview = ({ selectedImages }) => {
           <Processing />
         </button>
       )}
-      {initiated ? (<div
-        className="w-auto h-auto md:flex md:justify-evenly grid grid-cols-2 gap-2 bg-[#0D0E1D]/50 md:rounded-full
-       rounded-xl md:px-20 px-4 border-t-4 border-b-4  border-[#7042f861] py-6"
-      >
-        {imageUrls.map((url, index) => (
-          <img
-            key={index}
-            src={url}
-            alt={`Preview ${index}`}
-            className="md:w-40 md:h-30 w-20 h-20"
-          />
-        ))}
-      </div>): <div></div>}
+      {initiated ? (
+        <div
+          className="md:w-auto h-auto bg-[#0D0E1D]/50 md:rounded-full
+       rounded-xl md:px-20 px-4 border-y-4  border-[#7042f861] py-6"
+        >
+          <LightGallery plugins={[lgZoom]}>
+          {imageUrls.map((url, index) => (
+            <img
+              key={index}
+              src={url}
+              alt={`Preview ${index}`}
+              className="md:w-40 md:h-30 w-20 h-20 cursor-pointer"
+            />
+          ))}
+          </LightGallery>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

@@ -340,3 +340,13 @@ nav {
     border-radius: 0.25rem;
     
 }
+
+
+
+
+
+.lg-react-element {
+    display: flex; 
+    flex-wrap: wrap;  
+    gap: 0.5rem;
+}

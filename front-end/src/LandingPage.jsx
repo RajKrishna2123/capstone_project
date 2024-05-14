@@ -25,10 +25,11 @@ function LandingPage() {
         <Reviews />
 
         <div className="child">
-          <div className=''>
+          <div >
             <ContactForm />
-            <Footer />
+            {/* <div className='bg-orange-600 h-[350px]'></div> */}
           </div>
+            <Footer />
         </div>
       </div>
     );

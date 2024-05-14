@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import "./styling.css";
+import Footer from "./components/Footer";
 
 /**
  * This renders an item in the table of contents list.
@@ -663,6 +664,7 @@ function Documentation() {
         </main>
         <TableOfContents />
       </div>
+      <Footer />
     </div>
   );
 }
